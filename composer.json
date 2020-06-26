@@ -1,0 +1,19 @@
+{
+    "name": "mediameets/psh-commands",
+    "description": "This package provides some useful PSH commands for developing and releasing plugins for Shopware 6.",
+    "type": "library",
+    "require-dev": {
+        "shopware/psh": "^1.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marvin Schröder (media:meets GmbH)",
+            "email": "schroeder@mediameets.de",
+            "homepage": "https://www.mediameets.de",
+            "role": "Developer"
+        }
+    ],
+    "keywords": ["shopware", "psh", "shell"],
+    "prefer-stable": true
+}

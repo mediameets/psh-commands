@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psh xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="https://github.com/shopwareLabs/psh/blob/master/resource/config.xsd">
+    <header><![CDATA[
+ ___  ___ _  _    ___                              _
+| _ \/ __| || |  / __|___ _ __  _ __  __ _ _ _  __| |___
+|  _/\__ \ __ | | (__/ _ \ '  \| '  \/ _` | ' \/ _` (_-<
+|_|  |___/_||_|  \___\___/_|_|_|_|_|_\__,_|_||_\__,_/__/
+by mediameets.de
+    ]]></header>
+
+    <placeholder>
+        <dynamic name="PLUGIN_NAME">basename $PWD</dynamic>
+        <const name="SW6_ADMINISTRATION_ASSET_FOLDER">src/Resources/app/administration</const>
+        <const name="SW6_STOREFRONT_ASSET_FOLDER">src/Resources/app/storefront</const>
+    </placeholder>
+
+    <!-- Global (do not remove these environments!) -->
+    <environment name="dev">
+        <path>vendor/mediameets/psh-commands/global/dev/actions</path>
+    </environment>
+    <environment name="release">
+        <path>vendor/mediameets/psh-commands/global/release/actions</path>
+    </environment>
+
+    <!-- Shopware 6 -->
+    <environment name="sw6:dev">
+        <path>vendor/mediameets/psh-commands/sw6/dev/actions</path>
+    </environment>
+    <environment name="sw6:release">
+        <path>vendor/mediameets/psh-commands/sw6/release/actions</path>
+    </environment>
+</psh>
