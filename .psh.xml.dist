@@ -11,6 +11,7 @@ by mediameets.de
 
     <placeholder>
         <dynamic name="PLUGIN_NAME">basename $PWD</dynamic>
+        <dynamic name="SW6_PLUGIN_VERSION">php -f vendor/mediameets/psh-commands/sw6/release/scripts/get-plugin-version.php</dynamic>
         <const name="SW6_ADMINISTRATION_ASSET_FOLDER">src/Resources/app/administration</const>
         <const name="SW6_STOREFRONT_ASSET_FOLDER">src/Resources/app/storefront</const>
     </placeholder>

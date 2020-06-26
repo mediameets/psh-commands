@@ -3,6 +3,7 @@
     "description": "This package provides some useful PSH commands for developing and releasing plugins for Shopware 6.",
     "type": "library",
     "require-dev": {
+        "ext-json": "*",
         "shopware/psh": "^1.4"
     },
     "license": "MIT",
@@ -15,5 +16,8 @@
         }
     ],
     "keywords": ["shopware", "psh", "shell"],
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
 }
