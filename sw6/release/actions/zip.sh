@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #DESCRIPTION: Create ZIP archive for release into Shopware Community store.
 
-cd ../ && zip -r __PLUGIN_NAME__-__SW6_PLUGIN_VERSION__.zip __PLUGIN_NAME__ -x
+cd ../ && zip -FSr __PLUGIN_NAME__-__SW6_PLUGIN_VERSION__.zip __PLUGIN_NAME__ -x
    '__PLUGIN_NAME__/*.git/*'
    '__PLUGIN_NAME__/vendor/*'
    '__PLUGIN_NAME__/psh/*'
