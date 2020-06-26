@@ -27,7 +27,7 @@ In the fresh copied `.psh.xml.dist ` adjust the values of the placeholders. See 
 ## Configuration
 
 | Name | Description | Default |
-| ---|:---:|:---:|
+| ---|---|---|
 | PLUGIN_NAME | The technical name of your Shopware plugin. | basename $PWD |
 | SW6_ADMINISTRATION_ASSET_FOLDER | Folder of the administration assets of a Shopware 6 Plugin. | src/Resources/app/administration |
 | SW6_STOREFRONT_ASSET_FOLDER | Folder of the storefront assets of a Shopware 6 Plugin. | src/Resources/app/storefront |
