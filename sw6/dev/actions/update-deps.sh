@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#DESCRIPTION: Updates all composer and npm dependencies (for storefront & administration packages).
+#DESCRIPTION: Updates all composer and npm dependencies (storefront & administration).
 
 ACTION: dev:composer-update
 

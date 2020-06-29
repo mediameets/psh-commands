@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#DESCRIPTION: Analyzes the PHP code (with phpstan / psalm / phpinsights).
+#DESCRIPTION: Analyzes the PHP code (phpstan / psalm / phpinsights).
 
 # If phpstan/phpstan is installed, run it
 if [ -x vendor/bin/phpstan ]; then
