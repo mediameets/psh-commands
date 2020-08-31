@@ -3,6 +3,11 @@
 
 cd ../ && zip -FSr __PLUGIN_NAME__-__SW6_PLUGIN_VERSION__.zip __PLUGIN_NAME__ -x
    '__PLUGIN_NAME__/*.git/*'
+   '*/*.zip'
+   '*/*.tar'
+   '*/*.tar.gz'
+   '*/*.phar'
+   '*/.gitignore'
    '__PLUGIN_NAME__/vendor/*'
    '__PLUGIN_NAME__/psh/*'
    '__PLUGIN_NAME__/tests/*'
@@ -18,7 +23,6 @@ cd ../ && zip -FSr __PLUGIN_NAME__-__SW6_PLUGIN_VERSION__.zip __PLUGIN_NAME__ -x
    '__PLUGIN_NAME__/__SW6_STOREFRONT_ASSET_FOLDER__/.eslintrc.js'
    '__PLUGIN_NAME__/__SW6_STOREFRONT_ASSET_FOLDER__/stylelint.config.js'
    '__PLUGIN_NAME__/.editorconfig'
-   '__PLUGIN_NAME__/.gitignore'
    '__PLUGIN_NAME__/.php_cs.dist'
    '__PLUGIN_NAME__/.psh.xml.dist'
    '__PLUGIN_NAME__/phpinsights.php'
