@@ -3,15 +3,15 @@
 
 # If phpstan/phpstan is installed, run it
 if [ -x vendor/bin/phpstan ]; then
-   php vendor/bin/phpstan analyze;
+   php vendor/bin/phpstan analyze || true;
    fi
 
 # If vimeo/psalm is installed, run it
 if [ -x vendor/bin/psalm ]; then
-   php vendor/bin/psalm --threads=$(nproc) --diff --diff-methods --show-info=false;
+   php vendor/bin/psalm --threads=$(nproc) --diff --diff-methods --show-info=false || true;
    fi
 
 # If nunomaduro/phpinsights installed, run it
 if [ -x vendor/bin/phpinsights ]; then
-   php vendor/bin/phpinsights;
+   php vendor/bin/phpinsights || true;
    fi
