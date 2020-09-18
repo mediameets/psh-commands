@@ -2,8 +2,9 @@
     "name": "mediameets/psh-commands",
     "description": "This package provides some useful PSH commands for developing and releasing plugins for Shopware 6.",
     "type": "library",
-    "require-dev": {
+    "require": {
         "ext-json": "*",
+        "ext-simplexml": "*",
         "shopware/psh": "^1.4"
     },
     "license": "MIT",
