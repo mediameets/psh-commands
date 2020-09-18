@@ -4,8 +4,7 @@
     "type": "library",
     "require": {
         "ext-json": "*",
-        "ext-simplexml": "*",
-        "shopware/psh": "^1.4"
+        "ext-simplexml": "*"
     },
     "license": "MIT",
     "authors": [

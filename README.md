@@ -10,6 +10,8 @@ Use [composer](https://getcomposer.org/) to require this package as a developmen
 composer require mediameets/psh-commands --dev
 ```
 
+Note from the original PSH package: Although you can use PSH as a composer dependency, we recommend to use the PHAR archive instead. As a result this command library does not install PSH as a composer dependency (any longer)!
+
 ### Use library **with existing** psh config
 
 Add all environments and placeholders from the `.psh.xml.dist` file to your psh config file.
@@ -40,18 +42,6 @@ Now you can use the commands via global installed psh:
 
 ```bash
 psh
-```
-
-You could also require the psh locally:
-
-```bash
-composer require shopware/psh --dev
-```
-
-and use it like this:
-
-```bash
-vendor/bin/psh
 ```
 
 ### Overriding
