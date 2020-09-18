@@ -3,5 +3,5 @@
 
 # If phpunit/phpunit is installed, run it
 if [ -x ./../../../vendor/bin/phpunit ]; then
-   php ./../../../vendor/bin/phpunit --coverage-html=../../../public/build/tests/__PLUGIN_NAME__;
+   php ./../../../vendor/bin/phpunit --coverage-html=../../../public/build/tests/__SW6_PLUGIN_NAME__;
    fi

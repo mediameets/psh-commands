@@ -1,10 +1,10 @@
 # PSH Command Library
 
-This package provides a library of useful generic [PSH](https://github.com/shopwareLabs/psh) Commands when developing plugins for [Shopware](https://www.shopware.com/de/) 6.
+This package provides a library of useful generic [PSH](https://github.com/shopwareLabs/psh) Commands when developing plugins and apps for [Shopware](https://www.shopware.com/de/) 6.
 
 ## Installation
 
-Use [composer](https://getcomposer.org/) to require this package as a development dependency in your Shopware plugin:
+Use [composer](https://getcomposer.org/) to require this package as a development dependency in your Shopware plugin/app:
 
 ```bash
 composer require mediameets/psh-commands --dev
@@ -16,22 +16,23 @@ Add all environments and placeholders from the `.psh.xml.dist` file to your psh 
 
 ### Use library **without existing** psh config
 
-Copy the `.psh.xml.dist` file into your plugin root folder:
+Copy the `.psh.xml.dist` file into your plugin/app root folder:
 
 ```bash
 cp vendor/mediameets/psh-commands/.psh.xml.dist .psh.xml.dist
 ```
 
-In the fresh copied `.psh.xml.dist ` adjust the values of the placeholders. See configuration for more details.
+Usually no further configuration is necessary. See configuration for more details.
 
-## Configuration
+## Configuration for a Shopware 6 plugin or app
 
 | Name | Description | Default |
 | ---|---|---|
-| PLUGIN_NAME | The technical name of your Shopware plugin. | basename $PWD |
-| SW6_PLUGIN_VERSION | Version of the Shopware 6 Plugin. | php -f vendor/mediameets/psh-commands/sw6/release/scripts/get-plugin-version.php |
-| SW6_ADMINISTRATION_ASSET_FOLDER | Folder of the administration assets of a Shopware 6 Plugin. | src/Resources/app/administration |
-| SW6_STOREFRONT_ASSET_FOLDER | Folder of the storefront assets of a Shopware 6 Plugin. | src/Resources/app/storefront |
+| SW6_PLUGIN_NAME | The technical name of your Shopware plugin/app. | basename $PWD |
+| SW6_IS_APP | Holds information if package is a Shopware app (true) or plugin (false). | php -f vendor/mediameets/psh-commands/sw6/scripts/check-is-app.php |
+| SW6_PLUGIN_VERSION | Version of the Shopware 6 plugin/app. | php -f vendor/mediameets/psh-commands/sw6/scripts/get-plugin-version.php |
+| SW6_ADMINISTRATION_ASSET_FOLDER | Folder of the administration assets of a Shopware 6 plugin. | php -f vendor/mediameets/psh-commands/sw6/scripts/get-administration-asset-path.php |
+| SW6_STOREFRONT_ASSET_FOLDER | Folder of the storefront assets of a Shopware 6 plugin/app. | php -f vendor/mediameets/psh-commands/sw6/scripts/get-storefront-asset-path.php |
 
 ## Usage
 
@@ -55,11 +56,11 @@ vendor/bin/psh
 
 ### Overriding
 
-It is possible to override all of the commands in this library. One situation where you want to override the command is for example `sw6:release:zip`. This command creates a ZIP archive of your plugin folder and excludes unwanted files like composer.lock. So if you want to modify the excluded file list you need to override this command.
+It is possible to override all of the commands in this library. One situation where you want to override the command is for example `sw6:release:zip`. This command creates a ZIP archive of your plugin/app folder and excludes unwanted files like composer.lock. So if you want to modify the excluded file list you need to override this command.
 
 Do the following steps:
 
-1. To override the command create a folder for example `psh/sw6/release/actions` in your plugins root folder.
+1. To override the command create a folder for example `psh/sw6/release/actions` in your plugins/apps root folder.
 
 2. Then copy the `sw6:release:zip` action (shell script) and make the desired changes:
 
