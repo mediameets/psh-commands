@@ -1,6 +1,6 @@
 # PSH Command Library
 
-This package provides a library of useful generic [PSH](https://github.com/shopwareLabs/psh) Commands when developing plugins and apps for [Shopware](https://www.shopware.com/de/) 6.
+This package provides a library of useful generic [PSH](https://github.com/shopwareLabs/psh) Commands when developing plugins for [Shopware](https://www.shopware.com/de/) 5 and plugins or apps for Shopware 6.
 
 ## Installation
 
@@ -35,6 +35,12 @@ Usually no further configuration is necessary. See configuration for more detail
 | SW6_PLUGIN_VERSION | Version of the Shopware 6 plugin/app. | php -f vendor/mediameets/psh-commands/sw6/scripts/get-plugin-version.php |
 | SW6_ADMINISTRATION_ASSET_FOLDER | Folder of the administration assets of a Shopware 6 plugin. | php -f vendor/mediameets/psh-commands/sw6/scripts/get-administration-asset-path.php |
 | SW6_STOREFRONT_ASSET_FOLDER | Folder of the storefront assets of a Shopware 6 plugin/app. | php -f vendor/mediameets/psh-commands/sw6/scripts/get-storefront-asset-path.php |
+
+## Configuration for a Shopware 5 plugin
+
+| Name | Description | Default |
+| ---|---|---|
+| SW5_PLUGIN_VERSION | Version of the Shopware 5 plugin. | php -f vendor/mediameets/psh-commands/sw5/scripts/get-plugin-version.php |
 
 ## Usage
 
