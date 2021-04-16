@@ -14,6 +14,7 @@ if [ ! __SW6_IS_APP__ ]; then
          '__SW6_PLUGIN_NAME__/src/Resources/store/*'
          '__SW6_PLUGIN_NAME__/tests/*'
          '__SW6_PLUGIN_NAME__/composer.lock'
+         '__SW6_PLUGIN_NAME__/easy-coding-standard.php'
          '__SW6_PLUGIN_NAME__/__SW6_ADMINISTRATION_ASSET_FOLDER__/node_modules/*'
          '__SW6_PLUGIN_NAME__/__SW6_ADMINISTRATION_ASSET_FOLDER__/.stylelintignore'
          '__SW6_PLUGIN_NAME__/__SW6_ADMINISTRATION_ASSET_FOLDER__/.eslintignore'
