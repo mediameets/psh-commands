@@ -15,8 +15,8 @@ by mediameets.de
         <dynamic name="SW6_PLUGIN_NAME">basename $PWD</dynamic>
         <dynamic name="SW6_IS_APP">php -f vendor/mediameets/psh-commands/sw6/scripts/check-is-app.php</dynamic>
         <dynamic name="SW6_PLUGIN_VERSION">php -f vendor/mediameets/psh-commands/sw6/scripts/get-version.php</dynamic>
-        <const name="SW6_ADMINISTRATION_ASSET_FOLDER">php -f vendor/mediameets/psh-commands/sw6/scripts/get-administration-asset-path.php</const>
-        <const name="SW6_STOREFRONT_ASSET_FOLDER">php -f vendor/mediameets/psh-commands/sw6/scripts/get-storefront-asset-path.php</const>
+        <dynamic name="SW6_ADMINISTRATION_ASSET_FOLDER">php -f vendor/mediameets/psh-commands/sw6/scripts/get-administration-asset-path.php</dynamic>
+        <dynamic name="SW6_STOREFRONT_ASSET_FOLDER">php -f vendor/mediameets/psh-commands/sw6/scripts/get-storefront-asset-path.php</dynamic>
 
         <dynamic name="SW5_PLUGIN_VERSION">php -f vendor/mediameets/psh-commands/sw5/scripts/get-version.php</dynamic>
     </placeholder>
