@@ -8,7 +8,7 @@ if [ -x vendor/bin/phpstan ]; then
 
 # If vimeo/psalm is installed, run it
 if [ -x vendor/bin/psalm ]; then
-   php vendor/bin/psalm --threads=$(nproc) --diff --diff-methods --show-info=false || true;
+   php vendor/bin/psalm --threads=$(nproc) --diff --show-info=false || true;
    fi
 
 # If nunomaduro/phpinsights installed, run it
