@@ -10,6 +10,7 @@ cd ../ && zip -FSr __PLUGIN_FOLDER_NAME__-__SW5_PLUGIN_VERSION__.zip __PLUGIN_FO
    '*/.gitignore'
    '__PLUGIN_FOLDER_NAME__/vendor/*'
    '__PLUGIN_FOLDER_NAME__/psh/*'
+   '__PLUGIN_FOLDER_NAME__/Resources/store/*'
    '__PLUGIN_FOLDER_NAME__/src/Resources/store/*'
    '__PLUGIN_FOLDER_NAME__/tests/*'
    '__PLUGIN_FOLDER_NAME__/composer.json'
