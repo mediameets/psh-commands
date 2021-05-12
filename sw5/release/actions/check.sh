@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #DESCRIPTION: Checks plugin for missing pieces.
 
-if [ ! -f __PLUGIN_FOLDER_NAME__.php ];
-   then echo "ERROR: __PLUGIN_FOLDER_NAME__.php is missing";
+if [ ! -f __PLUGIN_FOLDER_NAME__.php ] && [ ! -f Bootstrap.php ] ;
+   then echo "ERROR: __PLUGIN_FOLDER_NAME__.php or Bootstrap.php must exist";
    exit 1;
    fi
 
@@ -11,7 +11,7 @@ if [ ! -f plugin.png ];
    exit 1;
    fi
 
-if [ ! -f plugin.xml ];
-   then echo "ERROR: plugin.xml is missing";
+if [ ! -f plugin.xml ] && [ ! -f plugin.json ];
+   then echo "ERROR: plugin.xml or plugin.json must exist";
    exit 1;
    fi

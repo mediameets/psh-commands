@@ -19,6 +19,8 @@ by mediameets.de
         <dynamic name="SW6_STOREFRONT_ASSET_FOLDER">php -f vendor/mediameets/psh-commands/sw6/scripts/get-storefront-asset-path.php</dynamic>
 
         <dynamic name="SW5_PLUGIN_VERSION">php -f vendor/mediameets/psh-commands/sw5/scripts/get-version.php</dynamic>
+        <dynamic name="SW5_TYPE">php -f vendor/mediameets/psh-commands/sw5/scripts/get-type.php</dynamic>
+        <const name="SW5_EXCLUDE_FROM_ZIP">vendor/mediameets/psh-commands/sw5/release/lists/exclude-from-zip.txt</const>
     </placeholder>
 
     <!-- Global (do not remove these environments!) -->

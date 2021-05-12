@@ -1,0 +1,17 @@
+*.zip
+.editorconfig
+.eslintrc.js
+.git
+.gitignore
+.idea
+.php_cs.dist
+.psh.xml.dist
+build.sh
+composer.json
+composer.lock
+node_modules
+package-lock.json
+package.json
+phpstan.neon
+psh-build-zip
+vendor
