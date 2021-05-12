@@ -8,6 +8,14 @@ if (file_exists("plugin.xml")) {
     } else {
         throw new Exception('Could not read plugin.xml');
     }
+} else if (file_exists("plugin.json")) {
+    $string = file_get_contents("plugin.json");
+    $data = json_decode($string, true);
+    if (is_array($data)) {
+        print $data['currentVersion'];
+    } else {
+        throw new Exception('Could not read plugin.json');
+    }
 } else {
-    throw new Exception('Version detection for legacy plugin not implemented yet!');
+    throw new Exception('Version detection for other methods than plugin.xml and plugin.json not implemented!');
 }
