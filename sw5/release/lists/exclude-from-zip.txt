@@ -5,6 +5,7 @@
 .gitignore
 .idea
 .php_cs.dist
+.php-cs-fixer.dist.php
 .psh.xml.dist
 build.sh
 composer.json

@@ -33,6 +33,7 @@ if [ -f plugin.json ]; then
          '__PLUGIN_FOLDER_NAME__/stylelint.config.js'
          '__PLUGIN_FOLDER_NAME__/.editorconfig'
          '__PLUGIN_FOLDER_NAME__/.php_cs.dist'
+         '__PLUGIN_FOLDER_NAME__/.php-cs-fixer.dist.php'
          '__PLUGIN_FOLDER_NAME__/.psh.xml.dist'
          '__PLUGIN_FOLDER_NAME__/phpinsights.php'
          '__PLUGIN_FOLDER_NAME__/phpstan.neon.dist'
