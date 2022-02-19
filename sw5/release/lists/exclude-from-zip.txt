@@ -13,7 +13,7 @@ composer.lock
 node_modules
 package-lock.json
 package.json
-phpstan.neon
+phpstan.neon*
 psh-build-zip
 psh
 vendor
