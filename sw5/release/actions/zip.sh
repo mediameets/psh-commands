@@ -35,6 +35,7 @@ if [ -f plugin.json ]; then
          '__PLUGIN_FOLDER_NAME__/.php_cs.dist'
          '__PLUGIN_FOLDER_NAME__/.php-cs-fixer.dist.php'
          '__PLUGIN_FOLDER_NAME__/.psh.xml.dist'
+         '__PLUGIN_FOLDER_NAME__/.shopware-extension.yml'
          '__PLUGIN_FOLDER_NAME__/phpinsights.php'
          '__PLUGIN_FOLDER_NAME__/phpstan.neon.dist'
          '__PLUGIN_FOLDER_NAME__/psalm.xml'

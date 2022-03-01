@@ -39,6 +39,7 @@ if [ ! __SW6_IS_APP__ ]; then
          '__SW6_PLUGIN_NAME__/.php_cs.dist'
          '__SW6_PLUGIN_NAME__/.php-cs-fixer.dist.php'
          '__SW6_PLUGIN_NAME__/.psh.xml.dist'
+         '__SW6_PLUGIN_NAME__/.shopware-extension.yml'
          '__SW6_PLUGIN_NAME__/phpinsights.php'
          '__SW6_PLUGIN_NAME__/phpstan.neon.dist'
          '__SW6_PLUGIN_NAME__/psalm.xml'
@@ -65,6 +66,7 @@ if [ ! __SW6_IS_APP__ ]; then
          '__SW6_PLUGIN_NAME__/__SW6_STOREFRONT_ASSET_FOLDER__/.babelrc.js'
          '__SW6_PLUGIN_NAME__/__SW6_STOREFRONT_ASSET_FOLDER__/stylelint.config.js'
          '__SW6_PLUGIN_NAME__/.editorconfig'
+         '__SW6_PLUGIN_NAME__/.shopware-extension.yml'
          '__SW6_PLUGIN_NAME__/.psh.xml.dist';
    fi
 
