@@ -18,3 +18,4 @@ phpstan.neon*
 psh-build-zip
 psh
 vendor
+rector.php

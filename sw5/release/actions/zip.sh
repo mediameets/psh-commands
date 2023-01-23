@@ -40,7 +40,8 @@ if [ -f plugin.json ]; then
          '__PLUGIN_FOLDER_NAME__/phpstan.neon.dist'
          '__PLUGIN_FOLDER_NAME__/psalm.xml'
          '__PLUGIN_FOLDER_NAME__/phpunit.xml.dist'
-         '__PLUGIN_FOLDER_NAME__/xdebug-filter.php';
+         '__PLUGIN_FOLDER_NAME__/xdebug-filter.php'
+         '__PLUGIN_FOLDER_NAME__/rector.php';
    fi
 
 echo "HINT: Please check the content of the created ZIP archive! Override this sw5:release:zip command

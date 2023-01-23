@@ -44,7 +44,8 @@ if [ ! __SW6_IS_APP__ ]; then
          '__SW6_PLUGIN_NAME__/phpstan.neon.dist'
          '__SW6_PLUGIN_NAME__/psalm.xml'
          '__SW6_PLUGIN_NAME__/phpunit.xml.dist'
-         '__SW6_PLUGIN_NAME__/xdebug-filter.php';
+         '__SW6_PLUGIN_NAME__/xdebug-filter.php'
+         '__SW6_PLUGIN_NAME__/rector.php';
    else
       cd ../ && zip -FSr __SW6_PLUGIN_NAME__-__SW6_PLUGIN_VERSION__.zip __SW6_PLUGIN_NAME__ -x
          '__SW6_PLUGIN_NAME__/*.git/*'
@@ -56,6 +57,7 @@ if [ ! __SW6_IS_APP__ ]; then
          '__SW6_PLUGIN_NAME__/vendor/*'
          '__SW6_PLUGIN_NAME__/psh/*'
          '__SW6_PLUGIN_NAME__/store/*'
+         '__SW6_PLUGIN_NAME__/rector.php'
          '__SW6_PLUGIN_NAME__/composer.lock'
          '__SW6_PLUGIN_NAME__/composer.json'
          '__SW6_PLUGIN_NAME__/__SW6_STOREFRONT_ASSET_FOLDER__/node_modules/*'
